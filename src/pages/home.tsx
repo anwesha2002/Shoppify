@@ -12,10 +12,10 @@ type dataProps={
 }
 
 export function Home(){
-    const [data, error]  = useGetApi<dataProps[]>("https://fakestoreapi.com/products", []);
+    const [data]  = useGetApi<dataProps[]>("https://fakestoreapi.com/products", []);
 
     //if(loading) return <h1>Loading...</h1>
-    if(error) return <h1>error</h1>
+    //if(error) return <h1>error</h1>
     return(
         <>
             <Row md={2} lg={3} xs={1} className="g-4">

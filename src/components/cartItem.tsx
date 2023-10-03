@@ -19,10 +19,8 @@ type CartItemProps ={
 
 
 export function CartItem({id, quantity} : CartItemProps){
-    const [data, error] = useGetApi<dataProps[]>("https://fakestoreapi.com/products", [])
+    const [data] = useGetApi<dataProps[]>("https://fakestoreapi.com/products", [])
     const {removeFromCart} = UseShoppingContext()
-
-    if(error) return <h1>error</h1>
     console.log("data", data)
     console.log("id", id)
     const item = data.find(item=> item.id === id)

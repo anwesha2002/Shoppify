@@ -8,7 +8,6 @@ type dataProps={
     image : string
     category : string
     price : number
-
     title : string
 }
 
