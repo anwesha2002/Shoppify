@@ -9,7 +9,7 @@ type dataProps={
     image : string
     category : string
     price : number
-    rating : object
+    rating : {rate : number, count : number}
     title : string
 }
 export function Item(){
@@ -21,9 +21,9 @@ export function Item(){
 
     if(loading) return <h1>Loading...</h1>
     if(error) return <h1>error</h1>
-    return(
+    return (
         <>
-            <ItemDetail {...data}/>
+            <ItemDetail description={""} id={0} image={""} category={""} price={0} title={""} {...data}></ItemDetail>
         </>
 
     )
