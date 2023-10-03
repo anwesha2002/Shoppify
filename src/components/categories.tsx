@@ -9,7 +9,7 @@ type dataProps={
     image : string
     category : string
     price : number
-    rating : object
+    rating : {rate : number, count : number}
     title : string
 }
 
@@ -17,9 +17,9 @@ export function Categories(){
     const location = useLocation()
     const category = location.state.cat
     console.log( category)
-    const [data, loading, error] = useGetApi<dataProps[]>(`https://fakestoreapi.com/products/category/${category}`,[])
+    const [data, error] = useGetApi<dataProps[]>(`https://fakestoreapi.com/products/category/${category}`,[])
     console.log("data",data)
-    if(loading) return <h1>Loading...</h1>
+    //if(loading) return <h1>Loading...</h1>
     if(error) return <h1>error</h1>
     return(
         <>

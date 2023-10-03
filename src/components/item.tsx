@@ -16,10 +16,10 @@ export function Item(){
     const location = useLocation()
     const id = location.state
     console.log("about",id.uid)
-    const [data, loading, error]  = useGetApi<dataProps[]>(`https://fakestoreapi.com/products/${id.uid}`, []);
+    const [data, error]  = useGetApi<dataProps[]>(`https://fakestoreapi.com/products/${id.uid}`, []);
     console.log("data",data)
 
-    if(loading) return <h1>Loading...</h1>
+    //if(loading) return <h1>Loading...</h1>
     if(error) return <h1>error</h1>
     return (
         <>
