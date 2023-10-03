@@ -3,7 +3,7 @@ import {NavLink} from "react-router-dom";
 import {UseShoppingContext} from "../context/pdoductProviderContext.tsx";
 
 export function Navbar(){
-    const {cartQuntity} = UseShoppingContext()
+    const {cartQuntity, openCart} = UseShoppingContext()
     return(
         <NavBarbs sticky="top" className="bg-white shadow-sm m-3">
             <Container>
@@ -13,7 +13,7 @@ export function Navbar(){
                     <Nav.Link to="/store" as={NavLink}>Store</Nav.Link>
                 </Nav>
                 { cartQuntity > 0 ?
-                    <Button className="rounded-pill" variant="outline-primary">
+                    <Button onClick={openCart} className="rounded-pill" variant="outline-primary">
                         Cart<Badge className="rounded-circle m-1" bg="danger">{cartQuntity}</Badge>
                     </Button> : null
                 }
