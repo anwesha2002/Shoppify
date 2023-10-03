@@ -1,6 +1,5 @@
 import {useGetApi} from "../data/api.tsx";
 import {Card, Col, Row} from "react-bootstrap";
-import {StoreItem} from "../components/storeitem.tsx";
 
 type dataProps={
     description : string

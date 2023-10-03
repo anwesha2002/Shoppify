@@ -1,7 +1,5 @@
-import {useEffect, useState} from 'react'
-import axios from "axios";
 import './App.css'
-import {Card, Container} from "react-bootstrap";
+import { Container} from "react-bootstrap";
 import {Route, Routes} from "react-router-dom";
 import {Navbar} from "./components/navbar.tsx";
 import {Home} from "./pages/home.tsx";

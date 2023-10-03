@@ -1,7 +1,6 @@
 import {useLocation} from "react-router-dom";
 import {useGetApi} from "../data/api.tsx";
 import {ItemDetail} from "./itemdetail.tsx";
-import {StoreItem} from "./storeitem.tsx";
 
 
 type dataProps={

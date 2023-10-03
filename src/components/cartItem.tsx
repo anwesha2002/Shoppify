@@ -1,4 +1,4 @@
-import {Button, Card, Stack} from "react-bootstrap";
+import {Button,  Stack} from "react-bootstrap";
 import {useGetApi} from "../data/api.tsx";
 import {FormatPrice} from "../utils/priceFormat.ts";
 import {UseShoppingContext} from "../context/pdoductProviderContext.tsx";

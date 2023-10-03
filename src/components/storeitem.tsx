@@ -1,6 +1,6 @@
 import {Button, Card, Image} from "react-bootstrap";
 import {FormatPrice} from "../utils/priceFormat.ts";
-import {Link, NavigateFunction, NavLink, useNavigate} from "react-router-dom";
+import { useNavigate} from "react-router-dom";
 import {UseShoppingContext} from "../context/pdoductProviderContext.tsx";
 type dataProps={
     description : string
@@ -13,7 +13,7 @@ type dataProps={
 }
 
 
-export function StoreItem({category, description , id, image, price, rating, title} : dataProps){
+export function StoreItem({ description , id, image, price, rating, title} : dataProps){
 
     const {getCartItem,
         increaseCartItem,

@@ -12,8 +12,8 @@ type dataProps={
     title : string
 }
 
-export function ItemDetail({id,description,category, image, price, title, rating} : dataProps){
-    const {cartItem,
+export function ItemDetail({id,description,category, image, price, title} : dataProps){
+    const {
         getCartItem,
         increaseCartItem,
         decreaseCartItem,
