@@ -22,7 +22,7 @@ This is a non-functional e-Commerce website developed using React. This website 
  - Clone the repository:
    
     ```bash
-   git clone https://github.com/your-username/Shoppify.git
+      https://github.com/anwesha2002/Shoppify.git
  - Navigate to the project directory:
 
      ```bash
