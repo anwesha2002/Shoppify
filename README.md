@@ -2,6 +2,8 @@
 
 This is a non-functional e-Commerce website developed using React. This website is designed to provide an online shopping experience, catering to both customers and sellers. It includes a wide range of features and functionalities that make it a robust platform for buying and selling products.
 
+![Screenshot 2024-01-11 082712](https://github.com/anwesha2002/Shoppify/assets/116761608/f00b0d53-8c8b-4f0a-9bca-0ddc783fd0ab)
+
 ## Tech Stack
 
   - React: A JavaScript library for building user interfaces, providing a dynamic and efficient front-end.
