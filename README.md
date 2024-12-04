@@ -40,5 +40,5 @@ This is a non-functional e-Commerce website developed using React. This website 
   
 ## Usage
 
-Access the application at http://localhost:3000.
+Access the application at https://shoppify-anwesha2002.vercel.app/.
 Explore the Shoppify platform, add products to your cart, and enjoy a seamless shopping experience.
